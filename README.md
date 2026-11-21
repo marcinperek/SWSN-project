@@ -12,3 +12,12 @@ The original paper that inspired this project can be found [here](https://link.s
 
 ## Assessment criteria
 https://docs.google.com/document/d/17d47KwN6Nkk38Y1H7e7mwQUJCT2z3WqebeMw6Z-kBdU
+## Preprocessing
+Processed data is not committed. Generate it with:
+
+```
+uv run jupyter nbconvert --to notebook --execute --inplace data/fb15k_preprocessing.ipynb
+uv run jupyter nbconvert --to notebook --execute --inplace data/yago_preprocessing.ipynb
+```
+
+This writes `data/processed/<dataset>/`: `train/valid/test.tsv` (triple split), `entity_classes.tsv` and `entity_split.tsv` (80/20 entity split per experiment). Terms are defined in `GLOSSARY.md`.
