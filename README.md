@@ -19,9 +19,7 @@ https://docs.google.com/document/d/17d47KwN6Nkk38Y1H7e7mwQUJCT2z3WqebeMw6Z-kBdU
 
 **Selected models.** Our core comparison uses TransE, RESCAL, ComplEx, DistMult, and ConvE as reference models from Jain et al. (2021). These cover translation, bilinear scoring, and convolution. We add [NodePiece](https://openreview.net/forum?id=xMJWUKJnFSw) to test whether a parameter-efficient, compositional representation can distinguish broad and fine-grained entity types as well as those reference models. We plan to compare entity-type classification on the same prepared splits for FB15k-237 and YAGO3-10.
 
-**Introductory notebook.** [PyKEEN quickstart](data/pykeen_intro.ipynb) trains TransE on the small Nations dataset and retrieves one entity embedding.
-
-**End-to-end MVP.** After running the FB15k-237 preprocessing notebook below, open [FB15k-237 entity typing](data/fb15k_mvp.ipynb). It trains TransE with PyKEEN, aligns embeddings with labels using pandas, and evaluates a simple scikit-learn classifier against a most-frequent-type baseline.
+**Introductory notebook and MVP.** After running the FB15k-237 preprocessing notebook below, open [FB15k-237 entity typing](data/fb15k_mvp.ipynb). It trains TransE with PyKEEN, aligns embeddings with labels using pandas, and evaluates a simple scikit-learn classifier against a most-frequent-type baseline.
 
 ## Preprocessing
 
